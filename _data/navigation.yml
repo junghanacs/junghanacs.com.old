@@ -1,0 +1,22 @@
+# main links
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: "Notes"
+    url: https://notes.junghanacs.com
+  - title: "About"
+    url: /about/
+  - title: "Tags"
+    url: /tags/
+  # - title: "Categories"
+  #   url: /categories/
+  # - title: "Posts"
+  #   url: /byyear/
+  # - title: "Books"
+  #   url: /books/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+  # - title: "Publications"
+  #   url: /publications/
+  # - title: "Tip Jar"
+  #   url: https://ko-fi.com/junghanacs
