@@ -7,12 +7,11 @@ author_profile: true
 ---
 
 <br>
-
 <!-- ![image-left](/assets/images/site/headshotsmall.jpg){: .align-left} -->
 
-# 텍스트 마스터
+# 텍스트 마스터 (TEXT MASTER)
 
-📜 Don't be the best. Be the only. 최고가 되지 말고, 유일한 사람이 되세요. - Kevin Kelly
+> 📜 Don't be the best. Be the only. 최고가 되지 말고, 유일한 사람이 되세요. - Kevin Kelly
 
 불사의 검을 만들던 이름 모를 대장장이가 텍스트 장인이 되어 돌아왔다.
 
