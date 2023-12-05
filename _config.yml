@@ -37,30 +37,16 @@ date_format: "%Y-%m-%d"
 # * Comment
 
 comments:
-  provider: "utterances" # "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2",  "giscus", "custom"
-  disqus:
-    shortname: junghanacs # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid:
-    num_posts: # 5 (default)
-    colorscheme: # "light" (default), "dark"
+  provider: "utterances" # "disqus"
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
-    label: "Comment" # Optional - must be existing label.
-  giscus:
-    repo_id: # Shown during giscus setup at https://giscus.app
-    category_name: # Full text name of the category
-    category_id: # Shown during giscus setup at https://giscus.app
-    discussion_term: # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled: # '1' for enabled (default), '0' for disabled
-    theme: # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch: # "master"
-    endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
+    label: "comment" # Optional - must be existing label.
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: junghanacs
+    # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 # * Spam
 
@@ -116,7 +102,7 @@ social:
 analytics:
   provider: "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id: G-GYRB327HE6
+    tracking_id: "G-GYRB327HE6"
     anonymize_ip: false # true, false (default)
 
 # * Site Author

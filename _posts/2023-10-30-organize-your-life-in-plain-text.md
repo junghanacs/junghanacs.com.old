@@ -3,11 +3,7 @@ title: "Organize Your Life In Plain Text"
 categories: [posts]
 tags: [dotfiles, emacs]
 last_modified_at: 2023-12-05
-toc: true
-toc_label: "My Table of Contents"
-toc_icon: "cog"
 ---
-
 
 <span class="timestamp-wrapper"><span class="timestamp">[2023-12-05 Tue 12:19] </span></span> Literature dotfiles 의 일부. 블로그 샘플.
 
