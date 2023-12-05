@@ -1,17 +1,17 @@
 # main links
 main:
-  - title: "Blog"
-    url: /blog/
-  - title: "Notes"
-    url: https://notes.junghanacs.com
   - title: "About"
     url: /about/
+  # - title: "Blog"
+  #   url: /blog/
+  - title: "Posts"
+    url: /byyear/
+  - title: "Notes"
+    url: https://notes.junghanacs.com
   - title: "Tags"
     url: /tags/
   # - title: "Categories"
   #   url: /categories/
-  # - title: "Posts"
-  #   url: /byyear/
   # - title: "Books"
   #   url: /books/
   # - title: "Sitemap"

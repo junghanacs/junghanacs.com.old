@@ -20,7 +20,7 @@ minimal_mistakes_skin: "default" # "air" "sunrise" , "aqua", "contrast", "dark",
 locale: "ko-KR" # "en-US"
 title: "Junghanacs.com"
 title_separator: "-"
-subtitle: "Meditations on technology, education, life, and Emacs"
+subtitle: "Meditations on technology, learning, life, and text-editor"
 name: "Junghan Kim"
 description: "Junghanacs.com; Text Master;"
 url: https://www.junghanacs.com
@@ -132,20 +132,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/junghanacs"
-
-# * Site Footer
-
-footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:junghanacs@gmail.com"
-    - label: "Notes"
-      icon: "fas fa-fw fa-link"
-      url: "https://notes.junghanacs.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: https://www.github.com/junghanacs
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url: https://www.gitlab.com/junghanacs
@@ -155,6 +141,20 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/junghanacs"
+
+# * Site Footer
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:junghanacs@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: https://www.github.com/junghanacs
+    - label: "Notes"
+      icon: "fas fa-fw fa-link"
+      url: "https://notes.junghanacs.com"
 # * Reading Files
 include:
   - .htaccess
@@ -243,38 +243,40 @@ collections:
 # paginate_path: /page:num/
 
 ## paginate-v2
-permalink: /:title/
-paginate_path: /blog/page:num
-pagination:
-  enabled: true
-  limit: 0
-  per_page: 10
-  sort_field: "date"
-  sort_reverse: true
-  trail:
-    before: 2 # The number of links before the current page
-    after: 2 # The number of links after the current page
+# permalink: /:title/
+# paginate_path: /blog/page:num
+# pagination:
+#   enabled: true
+#   limit: 0
+#   per_page: 10
+#   sort_field: "date"
+#   sort_reverse: true
+#   trail:
+#     before: 2 # The number of links before the current page
+#     after: 2 # The number of links after the current page
 
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # * Plugins (previously gems:)
 
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
   # - jekyll-archives
+  # - jekyll-paginate-v2
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
   # - jekyll-archives
+  # - jekyll-paginate-v2
 
 # * Archives
 
@@ -318,7 +320,16 @@ compress_html:
 
 # * Defaults
 
+
 defaults:
+  # _about
+  - scope:
+      path: ""
+      type: about
+    values:
+      layout: single
+      author_profile: true
+      comments: true
   # _posts
   - scope:
       path: ""
@@ -326,26 +337,27 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: false
       related: true
       show_date: true
-      toc: true
-      toc_sticky: true
+      toc: false
+      toc_sticky: false
       toc_label: "Table of Contents"
       toc_icon: "cog"
+      # classes: wide
       defaults:
   # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false
-      comments: true
+  # - scope:
+  #     path: ""
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     comments: true
 
-future: true
+future: false
 
 footer_scripts:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
