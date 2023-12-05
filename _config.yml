@@ -17,13 +17,12 @@ minimal_mistakes_skin: "default" # "air" "sunrise" , "aqua", "contrast", "dark",
 
 # * Site Settings
 
-locale: "en-US"
+locale: "ko-KR" # "en-US"
 title: "Junghanacs.com"
 title_separator: "-"
-# subtitle: "Emacs Geek; Writer, Coder and Educator"
 subtitle: "Meditations on technology, education, life, and Emacs"
-name: "Junghanacs"
-description: "Text Master"
+name: "Junghan Kim"
+description: "Junghanacs.com; Text Master;"
 url: https://www.junghanacs.com
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "junghanacs/junghanacs.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -39,10 +38,9 @@ date_format: "%Y-%m-%d"
 comments:
   provider: "giscus"
   giscus:
-    # repo: "junghanacs/junghanacs.com"
     repo_id: "R_kgDOKEswdw" # Shown during giscus setup at https://giscus.app
     category_name: "Announcements" # Full text name of the category
-    category_id: "DIC_kwDOKEswd84CbgkO" # Shown during giscus setup at https://giscus.app
+    category_id: "DIC_kwDOKEswd84CbgkM" # Shown during giscus setup at https://giscus.app
     discussion_term: "pathname" # "pathname" (default), "url", "title", "og:title"
     reactions_enabled: '1' # '1' for enabled (default), '0' for disabled
     theme: "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
@@ -119,10 +117,10 @@ analytics:
 # * Site Author
 
 author:
-  name: "Junghan Kim"
+  name: "Master"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Text Master"
-  location: "Suwon, South Korea"
+  bio: "Emacs Geek; Writer, Coder and Educator"
+  location: "South Korea"
   email:
   links:
     - label: "Email"
@@ -134,26 +132,29 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/junghanacs"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   # url: "https://twitter.com/"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   # url: "https://instagram.com/"
 
 # * Site Footer
 
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:junghanacs@gmail.com"
+    - label: "Notes"
+      icon: "fas fa-fw fa-link"
+      url: "https://notes.junghanacs.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://www.github.com/junghanacs
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: https://www.instagram.com/junghanacs
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url: https://www.gitlab.com/junghanacs
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/junghanacs"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/junghanacs"
 # * Reading Files
 include:
   - .htaccess
