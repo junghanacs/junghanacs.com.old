@@ -232,6 +232,7 @@ collections:
       layout: single
       author_profile: false
       share: true
+      comments: true
 
 # * Outputting
 
@@ -341,6 +342,7 @@ defaults:
     values:
       layout: single
       author_profile: false
+      comments: true
 
 future: true
 
