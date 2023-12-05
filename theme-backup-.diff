@@ -1,0 +1,195 @@
+diff --git a/_sass/minimal-mistakes/_masthead.scss b/_sass/minimal-mistakes/_masthead.scss
+index 2d903fa..2dfefcc 100644
+--- a/_sass/minimal-mistakes/_masthead.scss
++++ b/_sass/minimal-mistakes/_masthead.scss
+@@ -50,14 +50,12 @@
+   -ms-flex-item-align: center;
+   align-self: center;
+   font-weight: bold;
+-  font-family: $header-font-family;
+   // z-index: 20;
+ }
+ 
+ .site-subtitle {
+   display: block;
+-  font-size: $type-size-6; // 8
+-  font-weight: normal;
++  font-size: $type-size-8;
+ }
+ 
+ .masthead__menu {
+@@ -66,7 +64,6 @@
+   margin-right: 0;
+   width: 100%;
+   clear: both;
+-  font-family: $header-font-family;
+ 
+   .site-nav {
+     margin-left: 0;
+diff --git a/_sass/minimal-mistakes/_notices.scss b/_sass/minimal-mistakes/_notices.scss
+index 09365c9..90570b0 100644
+--- a/_sass/minimal-mistakes/_notices.scss
++++ b/_sass/minimal-mistakes/_notices.scss
+@@ -61,9 +61,9 @@
+     background-color: mix($background-color, $notice-color, $code-notice-background-mix)
+   }
+ 
+-  pre code {
+-    background-color: inherit;
+-  }
++	pre code {
++		background-color: inherit;
++	}
+ 
+   ul {
+     &:last-child {
+diff --git a/_sass/minimal-mistakes/_page.scss b/_sass/minimal-mistakes/_page.scss
+index 2e8af32..847dc4c 100644
+--- a/_sass/minimal-mistakes/_page.scss
++++ b/_sass/minimal-mistakes/_page.scss
+@@ -27,7 +27,7 @@ body {
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+-  flex-direction: column;
++          flex-direction: column;
+ }
+ 
+ .initial-content,
+@@ -93,27 +93,22 @@ body {
+     border-bottom: 1px solid $border-color;
+   }
+ 
+-  h1,
+-  h2,
+-  h3,
+-  h4,
+-  h5,
+-  h6 {
+-    .header-link {
+-      position: relative;
+-      left: 0.5em;
+-      opacity: 0;
+-      font-size: 0.8em;
+-      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+-      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+-      -o-transition: opacity 0.2s ease-in-out 0.1s;
+-      transition: opacity 0.2s ease-in-out 0.1s;
+-    }
+-
+-    &:hover .header-link {
+-      opacity: 1;
+-    }
+-  }
++	h1, h2, h3, h4, h5, h6 {
++		.header-link {
++			position: relative;
++			left: 0.5em;
++			opacity: 0;
++			font-size: 0.8em;
++			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
++			-moz-transition: opacity 0.2s ease-in-out 0.1s;
++			-o-transition: opacity 0.2s ease-in-out 0.1s;
++			transition: opacity 0.2s ease-in-out 0.1s;
++		}
++
++		&:hover .header-link {
++			opacity: 1;
++		}
++	}
+ 
+   p,
+   li,
+diff --git a/_sass/minimal-mistakes/_variables.scss b/_sass/minimal-mistakes/_variables.scss
+index 0daad5c..81a3acf 100644
+--- a/_sass/minimal-mistakes/_variables.scss
++++ b/_sass/minimal-mistakes/_variables.scss
+@@ -2,49 +2,6 @@
+    Variables
+    ========================================================================== */
+ 
+-@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;700&display=swap");
+-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+-
+-/* Iosevka */
+-/* https://css-tricks.com/snippets/css/using-font-face/ */
+-/*   Chrome   Safari   Firefox   Opera     IE   Android   iOS    */
+-/*    5+       5.1+     3.6+      11.50+   9+    4.4+     5.1+   */
+-/* Also http://whyarethingsthewaytheyare.com/trying-out-iosevka-font/ */
+-@font-face {
+-  font-family: "Iosevka";
+-  src: url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff2/iosevka-ss08-regular.woff2")
+-      format("woff2"),
+-    url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff/iosevka-ss08-regular.woff")
+-      format("woff");
+-}
+-@font-face {
+-  font-family: "Iosevka";
+-  src: url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff2/iosevka-ss08-italic.woff2")
+-      format("woff2"),
+-    url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff/iosevka-ss08-italic.woff")
+-      format("woff");
+-  font-style: italic;
+-}
+-@font-face {
+-  font-family: "Iosevka";
+-  src: url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff2/iosevka-ss08-bold.woff2")
+-      format("woff2"),
+-    url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff/iosevka-ss08-bold.woff")
+-      format("woff");
+-  font-weight: bold;
+-}
+-@font-face {
+-  font-family: "Iosevka";
+-  src: url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff2/iosevka-ss08-bolditalic.woff2")
+-      format("woff2"),
+-    url("https://cdn.jsdelivr.net/gh/kaushalmodi/iosevka-mirror@v1.14.5/woff/iosevka-ss08-bolditalic.woff")
+-      format("woff");
+-  font-weight: bold;
+-  font-style: italic;
+-}
+-
+-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css");
+-
+ /*
+    Typography
+    ========================================================================== */
+@@ -56,8 +13,8 @@ $paragraph-indent: false !default; // true, false (default)
+ $indent-var: 1.3em !default;
+ 
+ /* system typefaces */
+-$serif: "Hahmlet", Georgia, Times, serif !default;
+-$sans-serif: "Iosevka", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
++$serif: Georgia, Times, serif !default;
++$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+ $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+ 
+@@ -73,7 +30,7 @@ $calisto: "Calisto MT", serif !default;
+ $garamond: Garamond, serif !default;
+ 
+ $global-font-family: $sans-serif !default;
+-$header-font-family: "Pretendard", $sans-serif !default;
++$header-font-family: $sans-serif !default;
+ $caption-font-family: $serif !default;
+ 
+ /* type scale */
+diff --git a/_sass/minimal-mistakes/skins/_sunrise.scss b/_sass/minimal-mistakes/skins/_sunrise.scss
+index c7660fa..bc259f6 100644
+--- a/_sass/minimal-mistakes/skins/_sunrise.scss
++++ b/_sass/minimal-mistakes/skins/_sunrise.scss
+@@ -4,12 +4,10 @@
+ 
+ /* Colors */
+ $dark-gray: #0e2431 !default;
+-// $background-color: #e8d5b7 !default;
+-$background-color: #f9eecb !default;
++$background-color: #e8d5b7 !default;
+ $text-color: #000 !default;
+ $muted-text-color: $dark-gray !default;
+-// $primary-color: #fc3a52 !default;
+-$primary-color: #ed4b32 !default;
++$primary-color: #fc3a52 !default;
+ $border-color: mix(#000, $background-color, 20%) !default;
+ $code-background-color: mix(#fff, $background-color, 20%) !default;
+ $code-background-color-dark: mix(#000, $background-color, 10%) !default;

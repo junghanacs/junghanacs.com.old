@@ -50,14 +50,12 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
-  font-family: $header-font-family;
   // z-index: 20;
 }
 
 .site-subtitle {
   display: block;
-  font-size: $type-size-6; // 8
-  font-weight: normal;
+  font-size: $type-size-8;
 }
 
 .masthead__menu {
@@ -66,7 +64,6 @@
   margin-right: 0;
   width: 100%;
   clear: both;
-  font-family: $header-font-family;
 
   .site-nav {
     margin-left: 0;

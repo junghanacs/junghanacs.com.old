@@ -12,18 +12,19 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# TODO fix : _sass/minimal-mistakes/skins/_default.scss:7
+minimal_mistakes_skin: "default" # "air" "sunrise" , "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # * Site Settings
 
-locale: "ko-KR"
-# locale: "en-US"
-title: "Junghanacs"
+locale: "en-US"
+title: "Junghanacs.com"
 title_separator: "-"
-subtitle: "Emacs Geek; Writer, Coder and Educator"
+# subtitle: "Emacs Geek; Writer, Coder and Educator"
+subtitle: "Meditations on technology, education, life, and Emacs"
 name: "Junghanacs"
 description: "Text Master"
-url: # https://junghan0611.github.io
+url: https://www.junghanacs.com
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "junghanacs/junghanacs.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -36,9 +37,9 @@ date_format: "%Y-%m-%d"
 # * Comment
 
 comments:
-  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: "utterances" # "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2",  "giscus", "custom"
   disqus:
-    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: junghanacs # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -47,8 +48,9 @@ comments:
     num_posts: # 5 (default)
     colorscheme: # "light" (default), "dark"
   utterances:
-    theme: # "github-light" (default), "github-dark"
-    issue_term: # "pathname" (default)
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+    label: "Comment" # Optional - must be existing label.
   giscus:
     repo_id: # Shown during giscus setup at https://giscus.app
     category_name: # Full text name of the category
@@ -70,11 +72,11 @@ reCaptcha:
 
 atom_feed:
   path: # blank (default) uses feed.xml
-  hide: # true, false (default)
+  hide: false # true, false (default)
 
 # * Search
 
-search: # true, false (default)
+search: false # true, false (default)
 search_full_content: # true, false (default)
 search_provider: # lunr (default), algolia, google
 algolia:
@@ -112,17 +114,17 @@ social:
 
 # * Google Analytics
 analytics:
-  provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id:
-    anonymize_ip: # true, false (default)
+    tracking_id: G-GYRB327HE6
+    anonymize_ip: false # true, false (default)
 
 # * Site Author
 
 author:
   name: "Junghan Kim"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person."
+  bio: "Text Master"
   location: "Suwon, South Korea"
   email:
   links:
@@ -324,12 +326,16 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: false
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Table of Contents"
+      toc_icon: "cog"
       defaults:
   # _pages
   - scope:
@@ -340,3 +346,7 @@ defaults:
       author_profile: false
 
 future: true
+
+footer_scripts:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

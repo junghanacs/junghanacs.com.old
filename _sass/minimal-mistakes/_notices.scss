@@ -61,9 +61,9 @@
     background-color: mix($background-color, $notice-color, $code-notice-background-mix)
   }
 
-  pre code {
-    background-color: inherit;
-  }
+	pre code {
+		background-color: inherit;
+	}
 
   ul {
     &:last-child {
