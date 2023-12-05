@@ -117,7 +117,7 @@ analytics:
 # * Site Author
 
 author:
-  name: "Master"
+  name: "Text Master"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "Emacs Geek; Writer, Coder and Educator"
   location: "South Korea"
@@ -132,15 +132,15 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/junghanacs"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url: https://www.gitlab.com/junghanacs
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/junghanacs"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/junghanacs"
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   url: https://www.gitlab.com/junghanacs
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/junghanacs"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/junghanacs"
 
 # * Site Footer
 
