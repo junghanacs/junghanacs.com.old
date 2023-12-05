@@ -18,6 +18,13 @@
     script.setAttribute('data-reactions-enabled', '{{ site.comments.giscus.reactions_enabled | default: 1 }}');
     script.setAttribute('data-theme', '{{ site.comments.giscus.theme | default: "light" }}');
     script.setAttribute('crossorigin', 'anonymous');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-input-position', 'bottom');
+    script.setAttribute('data-lang', 'ko');
+
+    /* * data-mapping="specific"
+     * * data-term="{{ page.resource }}" */
 
     commentContainer.appendChild(script);
   })();
